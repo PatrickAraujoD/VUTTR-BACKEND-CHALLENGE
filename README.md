@@ -41,18 +41,18 @@ A API expõe os seguintes endpoints:
     ### Exemplo do corpo da requisição
   
     ```json
-        {
-            "title": "Notion",
-            "link": "https://notion.so",
-            "description": "All in one tool to organize teams and ideas. Write, plan, collaborate, and get organized. ",
-            "tags": [
-                "organization",
-                "planning",
-                "collaboration",
-                "writing",
-                "calendar"
-            ]
-        }
+     {
+         "title": "Notion",
+         "link": "https://notion.so",
+         "description": "All in one tool to organize teams and ideas. Write, plan, collaborate, and get organized. ",
+         "tags": [
+             "organization",
+             "planning",
+             "collaboration",
+             "writing",
+             "calendar"
+         ]
+     }
 - `GET /tools`: lista todas as ferramentas
     ```json
      {
