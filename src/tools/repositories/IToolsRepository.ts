@@ -5,6 +5,7 @@ interface IToolsRepository {
     getAll(): Promise<Tools[]>
     getToolsByTag(tag: string): Promise<Tools[]>
     createTools({title, link, description, tags}: IToolsDTO): Promise<Tools>
+    getByTitle(title: string): Promise<Tools | null>
 }
 
 export { IToolsRepository }
