@@ -126,6 +126,20 @@ class ToolsRepository implements IToolsRepository{
         return tool
     }
 
+    async deleteTool(id: number): Promise<void> {
+        await prisma.tags.deleteMany({
+            where: {
+                toolsId: id
+            }
+        })
+
+        await prisma.tools.delete({
+            where:{
+                id: id,
+            }
+        })
+    }
+
 }
 
 export { ToolsRepository }
